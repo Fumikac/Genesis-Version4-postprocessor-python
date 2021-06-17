@@ -1,0 +1,10 @@
+D: DRIFT = { l = 0.018};
+QF: QUADRUPOLE = { l = 0.108, k1= 99.83};
+QD: QUADRUPOLE = { l = 0.108, k1= -99.83};
+QF0: QUADRUPOLE = { l = 0.054, k1= 99.83};
+
+UND: UNDULATOR = {lambdau=0.018000,nwig=14,aw=0.8916};
+
+FODO: LINE={UND,QF0@0.000,D@0.054,QD@0.072,D@0.180,QF0@0.198};
+
+VISA: LINE={16*FODO};
