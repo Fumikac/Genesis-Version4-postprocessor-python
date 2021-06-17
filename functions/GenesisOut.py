@@ -4,6 +4,10 @@ from IPython.display import HTML, display
 import tabulate
 
 class GenesisOut:
+    """
+    Read output file of Genesis 1.3 Verison4. This is the main class used for postprocessing. Check result-*.ipynb for example use cases.
+    """
+    
 
     def __init__(self, path):
         #load file
