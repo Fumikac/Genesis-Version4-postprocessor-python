@@ -11,23 +11,22 @@ def plot_2d(x,y,C):
     X = np.tile(x, (ny+1,1))
     Y = np.tile(y, (nx+1,1)).transpose()
     plt.pcolormesh(X, Y, C.transpose())
-    plt.colorbar()
     
     return None
 
-def get_hist(s_z, xmin = None, xmax=None, N=5000, weight=None, density=True):
+def get_hist(s_z, xmin = None, xmax=None, N=5000, weights=None):
     '''
     Get a histogram from a 1D scatter data
     N: number of sample points
     
-    output: probability density. if density=False, return #particles in each bin
+    output: probability density
     '''
     if xmin is None and xmax is None:
         xmin = min(s_z)
         xmax = max(s_z)
         
     T = (xmax - xmin)/N #sample spacing
-    y, bins = np.histogram(s_z, bins=np.linspace(xmin, xmax, N), weights=weight)
+    y, bins = np.histogram(s_z, bins=np.linspace(xmin, xmax, N), weights=weights)
     x = bins[:-1]-T/2
     
     return x,y
