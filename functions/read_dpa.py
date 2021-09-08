@@ -176,7 +176,6 @@ class GenesisParticlesDump:
             xf, C[:,i] = get_fft(x1, y1)
 
         yf = np.arange(nz)*l_u
-        c = 299792458
         h = 4.135667696e-15 #[eV*s]
         return h*xf[5:], yf, np.log10(C[5:,:])
     
