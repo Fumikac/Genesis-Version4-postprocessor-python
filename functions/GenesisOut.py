@@ -46,6 +46,8 @@ class GenesisOut:
 
         #maximum power along z
         self.power_z = np.max(self.power, 1)
+        #energy of the field
+        self.Field_energy = np.trapz(self.power, dx=self.dt)
         
         #display
         self.show_contents()
@@ -77,7 +79,7 @@ class GenesisOut:
                 return {key:self.file['Meta']['Version'][key][()] for key in self.file['Meta']['Version'].keys()}
         else:
             parameter = self.file[parent][child][()]
-            if parameter.shape == (1,):
+            if parameter.shape[0] == 1:
                 return parameter[0]
             elif parameter.shape ==(1,1):
                 return parameter[0][0]
