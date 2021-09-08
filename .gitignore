@@ -11,3 +11,4 @@ benchmark/*
 !benchmark/Benchmark1-SASE
 !benchmark/Benchmark4-UndErrors
 !benchmark/VISA-Gaussian-Seed
+slicefile-to-hdf5.ipynb
