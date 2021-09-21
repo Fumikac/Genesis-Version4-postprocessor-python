@@ -3,7 +3,7 @@
 Post-processor (Python) of [Genesis 1.3 Version 4](https://github.com/svenreiche/Genesis-1.3-Version4), Time-dependent, 3D Code to simulate the amplification process of a Free-electron Laser.
 
 - Can calculate radiation frequency (far-field and near-field) for Time-dependent case.
-- Also includes postprocessor ([read_dpa.py](functions/read_dpa.py)) of particle dump files (.dpa and .par) which is compatible with older versions (not tested yet for Version 4). With the code, you can track all simulated particles.
+- Also includes postprocessor ([read_dpa.py](functions/read_dpa.py)) of particle dump files (.dpa and .par). With the code, you can track all simulated particles.
 
 ## Example cases
 Benchmarks provided by the author of Genesis 1.3 Version 4
