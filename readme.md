@@ -1,5 +1,7 @@
 # Genesis 1.3 Virson 4 post processor in Python
 
+Fumika Isono
+
 Post-processor (Python) of [Genesis 1.3 Version 4](https://github.com/svenreiche/Genesis-1.3-Version4), Time-dependent, 3D Code to simulate the amplification process of a Free-electron Laser.
 
 - Can calculate radiation frequency (far-field and near-field) for Time-dependent case.
